@@ -1,0 +1,37 @@
+###
+POST http://localhost:3000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "jose",
+    "apellido": "Chaves",
+    "edad": 67,
+    "correo": "jose@hotmail.com",
+    "domicilio": "B° Policial III Mza U casa 7",
+    "pais": "Argentina"
+
+}
+
+###
+GET http://localhost:3000/api/users HTTP/1.1
+
+###
+//busca por ID
+GET http://localhost:3000/api/users/662c0e29f784a9829ec1d15a HTTP/1.1
+
+###
+PUT  http://localhost:3000/api/users/66301d80e49d68876264b4b6 HTTP/1.1
+Content-Type: application/json
+
+
+{
+    "nombre": "Pedro",
+    "apellido": "Perez",
+    "edad": 42,
+    "correo": "Pedrito@hotmail.com",
+    "domicilio": "B° Policial III Mza U casa 17"
+}
+
+###
+DELETE http://localhost:3000/api/users/662c12c487ab78699abe92fb HTTP/1.1
+
